@@ -1,0 +1,17 @@
+# Exclude large files not needed for deployment
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+training/
+tests/
+tools/
+screenshots/
+*.csv
+*.csv.gz
+*.parquet
+data/model/*.joblib
+data/ft/
+.env
+.git/

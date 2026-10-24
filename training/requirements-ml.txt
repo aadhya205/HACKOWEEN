@@ -1,0 +1,4 @@
+# Batch training only — the FastAPI service does not import these.
+pandas>=2.2
+scikit-learn>=1.5
+joblib>=1.4

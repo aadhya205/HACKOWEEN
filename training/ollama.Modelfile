@@ -1,0 +1,22 @@
+# Register the local explanation model:
+#   python llama.cpp/convert_lora_to_gguf.py data/ft/adapter \
+#     --base-model-id Qwen/Qwen2.5-0.5B-Instruct --outtype f16
+#   ollama create ledger-fraud -f training/ollama.Modelfile
+#
+# The FROM tag must match the base the adapter was trained on. Swap
+# qwen2.5:0.5b-instruct for qwen2.5:3b-instruct if you fine-tuned the 3B.
+FROM qwen2.5:0.5b-instruct
+
+# The LoRA adapter (GGUF). Remove this line to run the un-tuned base model.
+ADAPTER ./data/ft/adapter/adapter.gguf
+
+PARAMETER temperature 0.2
+PARAMETER num_predict 200
+PARAMETER top_p 0.9
+PARAMETER stop "<|im_end|>"
+
+SYSTEM """You explain bank fraud alerts in plain English for a demo dashboard.
+Return exactly two sentences and nothing else: no markdown, no preamble, no bullet points, no line breaks.
+Sentence 1: what the accounts did, as a pattern, using only the numbers in the FACTS json.
+Sentence 2: what the risk score means and that a human analyst makes the final decision.
+Rules: use ONLY numbers that appear in the FACTS json — never invent, round or recompute one. Money stays a plain number with no currency symbol."""

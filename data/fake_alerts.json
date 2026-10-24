@@ -1,0 +1,845 @@
+{
+  "alerts": [
+    {
+      "ring_id": "TC01_family_transfers",
+      "accounts": [
+        "DAUGHTER",
+        "FATHER",
+        "MOTHER",
+        "SON"
+      ],
+      "edges": [
+        {
+          "from": "FATHER",
+          "to": "SON",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "FATHER",
+          "to": "DAUGHTER",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "SON",
+          "to": "MOTHER",
+          "amount": 10000,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "DAUGHTER",
+          "to": "MOTHER",
+          "amount": 10000,
+          "timestamp": "2026-10-24T10:03:00"
+        }
+      ],
+      "time_window_seconds": 180.0,
+      "new_accounts": 0,
+      "pattern": "Family transfers"
+    },
+    {
+      "ring_id": "TC02_college_fest",
+      "accounts": [
+        "COORDINATOR",
+        "EVENT_VENDOR",
+        "STUDENT_01",
+        "STUDENT_02",
+        "STUDENT_03",
+        "STUDENT_04",
+        "STUDENT_05",
+        "STUDENT_06",
+        "STUDENT_07",
+        "STUDENT_08",
+        "STUDENT_09",
+        "STUDENT_10",
+        "STUDENT_11",
+        "STUDENT_12",
+        "STUDENT_13",
+        "STUDENT_14",
+        "STUDENT_15",
+        "STUDENT_16",
+        "STUDENT_17",
+        "STUDENT_18",
+        "STUDENT_19",
+        "STUDENT_20"
+      ],
+      "edges": [
+        {
+          "from": "STUDENT_01",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "STUDENT_02",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "STUDENT_03",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "STUDENT_04",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "STUDENT_05",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "STUDENT_06",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "STUDENT_07",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "STUDENT_08",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "STUDENT_09",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "STUDENT_10",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "STUDENT_11",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "STUDENT_12",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "STUDENT_13",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "STUDENT_14",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "STUDENT_15",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "STUDENT_16",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "STUDENT_17",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "STUDENT_18",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "STUDENT_19",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "STUDENT_20",
+          "to": "COORDINATOR",
+          "amount": 500,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "COORDINATOR",
+          "to": "EVENT_VENDOR",
+          "amount": 10000,
+          "timestamp": "2026-10-24T10:10:00"
+        }
+      ],
+      "time_window_seconds": 600.0,
+      "new_accounts": 0,
+      "pattern": "Event collections and vendor payment"
+    },
+    {
+      "ring_id": "TC03_restaurant_split",
+      "accounts": [
+        "FRIEND_1",
+        "FRIEND_2",
+        "FRIEND_3",
+        "FRIEND_4",
+        "PAYER",
+        "RESTAURANT"
+      ],
+      "edges": [
+        {
+          "from": "PAYER",
+          "to": "RESTAURANT",
+          "amount": 5000,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "FRIEND_1",
+          "to": "PAYER",
+          "amount": 1000,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "FRIEND_2",
+          "to": "PAYER",
+          "amount": 1000,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "FRIEND_3",
+          "to": "PAYER",
+          "amount": 1000,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "FRIEND_4",
+          "to": "PAYER",
+          "amount": 1000,
+          "timestamp": "2026-10-24T10:04:00"
+        }
+      ],
+      "time_window_seconds": 240.0,
+      "new_accounts": 0,
+      "pattern": "Friends reimburse bill payer"
+    },
+    {
+      "ring_id": "TC04_merchant_upi",
+      "accounts": [
+        "BUSINESS_ACCOUNT",
+        "CUSTOMER_01",
+        "CUSTOMER_02",
+        "CUSTOMER_03",
+        "CUSTOMER_04",
+        "CUSTOMER_05",
+        "CUSTOMER_06",
+        "CUSTOMER_07",
+        "CUSTOMER_08",
+        "CUSTOMER_09",
+        "CUSTOMER_10",
+        "CUSTOMER_11",
+        "CUSTOMER_12",
+        "CUSTOMER_13",
+        "CUSTOMER_14",
+        "CUSTOMER_15",
+        "CUSTOMER_16",
+        "CUSTOMER_17",
+        "CUSTOMER_18",
+        "CUSTOMER_19",
+        "CUSTOMER_20",
+        "TEA_SHOP"
+      ],
+      "edges": [
+        {
+          "from": "CUSTOMER_01",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "CUSTOMER_02",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "CUSTOMER_03",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "CUSTOMER_04",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "CUSTOMER_05",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "CUSTOMER_06",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "CUSTOMER_07",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "CUSTOMER_08",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "CUSTOMER_09",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "CUSTOMER_10",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "CUSTOMER_11",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "CUSTOMER_12",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "CUSTOMER_13",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "CUSTOMER_14",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "CUSTOMER_15",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "CUSTOMER_16",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "CUSTOMER_17",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "CUSTOMER_18",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "CUSTOMER_19",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "CUSTOMER_20",
+          "to": "TEA_SHOP",
+          "amount": 50,
+          "timestamp": "2026-10-24T10:05:00"
+        },
+        {
+          "from": "TEA_SHOP",
+          "to": "BUSINESS_ACCOUNT",
+          "amount": 1000,
+          "timestamp": "2026-10-24T10:20:00"
+        }
+      ],
+      "time_window_seconds": 1200.0,
+      "new_accounts": 0,
+      "pattern": "Merchant receives many payments and settles"
+    },
+    {
+      "ring_id": "TC05_salary_distribution",
+      "accounts": [
+        "COMPANY",
+        "EMPLOYEE_01",
+        "EMPLOYEE_02",
+        "EMPLOYEE_03",
+        "EMPLOYEE_04",
+        "EMPLOYEE_05",
+        "EMPLOYEE_06",
+        "EMPLOYEE_07",
+        "EMPLOYEE_08",
+        "EMPLOYEE_09",
+        "EMPLOYEE_10"
+      ],
+      "edges": [
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_01",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_02",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_03",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_04",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_05",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:05:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_06",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:06:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_07",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:07:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_08",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:08:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_09",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:09:00"
+        },
+        {
+          "from": "COMPANY",
+          "to": "EMPLOYEE_10",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:10:00"
+        }
+      ],
+      "time_window_seconds": 540.0,
+      "new_accounts": 0,
+      "pattern": "Company payroll"
+    },
+    {
+      "ring_id": "TC06_wedding_gifts",
+      "accounts": [
+        "FAMILY",
+        "GUEST_01",
+        "GUEST_02",
+        "GUEST_03",
+        "GUEST_04",
+        "GUEST_05",
+        "GUEST_06",
+        "GUEST_07",
+        "GUEST_08",
+        "GUEST_09",
+        "GUEST_10",
+        "WEDDING_PLANNER"
+      ],
+      "edges": [
+        {
+          "from": "GUEST_01",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "GUEST_02",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "GUEST_03",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "GUEST_04",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "GUEST_05",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:05:00"
+        },
+        {
+          "from": "GUEST_06",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:06:00"
+        },
+        {
+          "from": "GUEST_07",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:07:00"
+        },
+        {
+          "from": "GUEST_08",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:08:00"
+        },
+        {
+          "from": "GUEST_09",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:09:00"
+        },
+        {
+          "from": "GUEST_10",
+          "to": "FAMILY",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:10:00"
+        },
+        {
+          "from": "FAMILY",
+          "to": "WEDDING_PLANNER",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:15:00"
+        }
+      ],
+      "time_window_seconds": 840.0,
+      "new_accounts": 0,
+      "pattern": "Wedding gifts paid to planner"
+    },
+    {
+      "ring_id": "TC07_slow_mule_chain",
+      "accounts": [
+        "COLLECTOR_D",
+        "COMPROMISED_A",
+        "MULE_B",
+        "MULE_C"
+      ],
+      "edges": [
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_B",
+          "amount": 45000,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "MULE_B",
+          "to": "MULE_C",
+          "amount": 44000,
+          "timestamp": "2026-10-26T10:00:00"
+        },
+        {
+          "from": "MULE_C",
+          "to": "COLLECTOR_D",
+          "amount": 43000,
+          "timestamp": "2026-10-29T10:00:00"
+        }
+      ],
+      "time_window_seconds": 432000.0,
+      "new_accounts": 2,
+      "pattern": "Simulated slow suspicious transfer chain"
+    },
+    {
+      "ring_id": "TC08_small_split_transfers",
+      "accounts": [
+        "COLLECTOR",
+        "COMPROMISED_A",
+        "MULE_01",
+        "MULE_02",
+        "MULE_03",
+        "MULE_04",
+        "MULE_05",
+        "MULE_06",
+        "MULE_07",
+        "MULE_08",
+        "MULE_09",
+        "MULE_10"
+      ],
+      "edges": [
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_01",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_02",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_03",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_04",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_05",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:05:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_06",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:06:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_07",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:07:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_08",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:08:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_09",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:09:00"
+        },
+        {
+          "from": "COMPROMISED_A",
+          "to": "MULE_10",
+          "amount": 2000,
+          "timestamp": "2026-10-24T10:10:00"
+        },
+        {
+          "from": "MULE_01",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:13:00"
+        },
+        {
+          "from": "MULE_02",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:14:00"
+        },
+        {
+          "from": "MULE_03",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:15:00"
+        },
+        {
+          "from": "MULE_04",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:16:00"
+        },
+        {
+          "from": "MULE_05",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:17:00"
+        },
+        {
+          "from": "MULE_06",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:18:00"
+        },
+        {
+          "from": "MULE_07",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:19:00"
+        },
+        {
+          "from": "MULE_08",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:20:00"
+        },
+        {
+          "from": "MULE_09",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:21:00"
+        },
+        {
+          "from": "MULE_10",
+          "to": "COLLECTOR",
+          "amount": 1950,
+          "timestamp": "2026-10-24T10:22:00"
+        }
+      ],
+      "time_window_seconds": 1260.0,
+      "new_accounts": 10,
+      "pattern": "Simulated many small transfers then consolidation"
+    },
+    {
+      "ring_id": "TC09_circular_fraud",
+      "accounts": [
+        "MULE_A",
+        "MULE_B",
+        "MULE_C"
+      ],
+      "edges": [
+        {
+          "from": "MULE_A",
+          "to": "MULE_B",
+          "amount": 30000,
+          "timestamp": "2026-10-24T10:00:00"
+        },
+        {
+          "from": "MULE_B",
+          "to": "MULE_C",
+          "amount": 29500,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "MULE_C",
+          "to": "MULE_A",
+          "amount": 29000,
+          "timestamp": "2026-10-24T10:04:00"
+        }
+      ],
+      "time_window_seconds": 240.0,
+      "new_accounts": 3,
+      "pattern": "Simulated circular transfers"
+    },
+    {
+      "ring_id": "TC10_established_compromised",
+      "accounts": [
+        "COLLECTOR",
+        "CUSTOMER_1",
+        "CUSTOMER_2",
+        "ESTABLISHED_A",
+        "SOURCE_1",
+        "SOURCE_2",
+        "SOURCE_3",
+        "SOURCE_4",
+        "SOURCE_5"
+      ],
+      "edges": [
+        {
+          "from": "CUSTOMER_1",
+          "to": "ESTABLISHED_A",
+          "amount": 1000,
+          "timestamp": "2026-09-14T10:00:00"
+        },
+        {
+          "from": "CUSTOMER_2",
+          "to": "ESTABLISHED_A",
+          "amount": 900,
+          "timestamp": "2026-10-04T10:00:00"
+        },
+        {
+          "from": "SOURCE_1",
+          "to": "ESTABLISHED_A",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:01:00"
+        },
+        {
+          "from": "SOURCE_2",
+          "to": "ESTABLISHED_A",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:02:00"
+        },
+        {
+          "from": "SOURCE_3",
+          "to": "ESTABLISHED_A",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:03:00"
+        },
+        {
+          "from": "SOURCE_4",
+          "to": "ESTABLISHED_A",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:04:00"
+        },
+        {
+          "from": "SOURCE_5",
+          "to": "ESTABLISHED_A",
+          "amount": 20000,
+          "timestamp": "2026-10-24T10:05:00"
+        },
+        {
+          "from": "ESTABLISHED_A",
+          "to": "COLLECTOR",
+          "amount": 99500,
+          "timestamp": "2026-10-24T10:08:00"
+        }
+      ],
+      "time_window_seconds": 3456480.0,
+      "new_accounts": 1,
+      "pattern": "Simulated formerly normal account suddenly relaying funds"
+    }
+  ]
+}

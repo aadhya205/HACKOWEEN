@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-10-24T09:34:56.792750+00:00",
+  "dataset": {
+    "path": "/Users/sanvi/Downloads/Ledger-of-the-Undead-share/data/paysim.csv",
+    "rows_scanned": 6362620,
+    "rows_modelled": 2770409,
+    "rows_by_type": {
+      "CASH_OUT": 2237500,
+      "PAYMENT": 2151495,
+      "CASH_IN": 1399284,
+      "TRANSFER": 532909,
+      "DEBIT": 41432
+    },
+    "frauds": 8213,
+    "fraud_rate": 0.002965,
+    "train_rows": 1951895,
+    "fit_rows": 403643,
+    "fit_frauds": 3643,
+    "fit_fraud_rate": 0.009025,
+    "negative_sample_cap": 400000,
+    "validation_rows": 266010,
+    "test_rows": 552504,
+    "features": [
+      "amount",
+      "log_amount",
+      "orig_old_balance",
+      "orig_new_balance",
+      "dest_old_balance",
+      "dest_new_balance",
+      "orig_zeroed",
+      "dest_was_empty",
+      "amount_to_balance",
+      "orig_balance_error",
+      "dest_balance_error",
+      "is_transfer",
+      "step_of_day"
+    ]
+  },
+  "thresholds": {
+    "threshold": 0.3,
+    "f1": 0.9984,
+    "precision": 0.9968,
+    "recall": 1.0,
+    "precision_first": {
+      "threshold": 0.98,
+      "precision": 0.9968,
+      "recall": 1.0
+    }
+  },
+  "validation": {
+    "split": "validation",
+    "rows": 266010,
+    "frauds": 312,
+    "fraud_rate": 0.001173,
+    "pr_auc": 0.9998,
+    "roc_auc": 1.0,
+    "at_thresholds": [
+      {
+        "threshold": 0.3,
+        "precision": 0.9968,
+        "recall": 1.0,
+        "f1": 0.9984,
+        "true_positives": 312,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 265697,
+        "alert_rate": 0.001177,
+        "fraud_amount_caught": 373070360.28,
+        "fraud_amount_caught_pct": 100.0
+      }
+    ]
+  },
+  "test": {
+    "split": "test (latest 20% of steps)",
+    "rows": 552504,
+    "frauds": 4258,
+    "fraud_rate": 0.007707,
+    "pr_auc": 1.0,
+    "roc_auc": 1.0,
+    "at_thresholds": [
+      {
+        "threshold": 0.3,
+        "precision": 0.9995,
+        "recall": 0.9998,
+        "f1": 0.9996,
+        "true_positives": 4257,
+        "false_positives": 2,
+        "false_negatives": 1,
+        "true_negatives": 548244,
+        "alert_rate": 0.007709,
+        "fraud_amount_caught": 6702240891.14,
+        "fraud_amount_caught_pct": 99.99
+      },
+      {
+        "threshold": 0.98,
+        "precision": 1.0,
+        "recall": 0.9995,
+        "f1": 0.9998,
+        "true_positives": 4256,
+        "false_positives": 0,
+        "false_negatives": 2,
+        "true_negatives": 548246,
+        "alert_rate": 0.007703,
+        "fraud_amount_caught": 6701841846.06,
+        "fraud_amount_caught_pct": 99.99
+      },
+      {
+        "threshold": 0.5,
+        "precision": 0.9995,
+        "recall": 0.9998,
+        "f1": 0.9996,
+        "true_positives": 4257,
+        "false_positives": 2,
+        "false_negatives": 1,
+        "true_negatives": 548244,
+        "alert_rate": 0.007709,
+        "fraud_amount_caught": 6702240891.14,
+        "fraud_amount_caught_pct": 99.99
+      }
+    ],
+    "existing_rule_baseline": {
+      "precision": 1.0,
+      "recall": 0.0031,
+      "f1": 0.0061,
+      "alerts": 13
+    }
+  },
+  "ring_threshold": 0.98,
+  "rings": [
+    {
+      "ring_id": "PS-001",
+      "risk": 66,
+      "accounts": 6,
+      "edges": 5,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.2
+    },
+    {
+      "ring_id": "PS-002",
+      "risk": 58,
+      "accounts": 7,
+      "edges": 6,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.167
+    },
+    {
+      "ring_id": "PS-003",
+      "risk": 58,
+      "accounts": 6,
+      "edges": 5,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.2
+    },
+    {
+      "ring_id": "PS-004",
+      "risk": 57,
+      "accounts": 11,
+      "edges": 10,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.1
+    },
+    {
+      "ring_id": "PS-005",
+      "risk": 56,
+      "accounts": 6,
+      "edges": 5,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.2
+    },
+    {
+      "ring_id": "PS-006",
+      "risk": 55,
+      "accounts": 5,
+      "edges": 4,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.25
+    },
+    {
+      "ring_id": "PS-007",
+      "risk": 55,
+      "accounts": 5,
+      "edges": 4,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.25
+    },
+    {
+      "ring_id": "PS-008",
+      "risk": 54,
+      "accounts": 9,
+      "edges": 8,
+      "pattern": "fan-in to collection account",
+      "anomaly_score": 0.125
+    }
+  ],
+  "runtime_seconds": 22.1
+}

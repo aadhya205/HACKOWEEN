@@ -1,0 +1,38 @@
+# Secrets — never commit API keys (team plan, section 8)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Datasets — download PaySim from Kaggle, don't commit it
+data/*.csv
+data/*.csv.gz
+data/*.parquet
+
+# Trained binaries / adapters (metrics + rings JSON are small and tracked)
+data/model/*.joblib
+data/ft/adapter/
+data/ft/*.safetensors
+
+# Frontend
+node_modules/
+dist/
+.vite/
+
+# Local tools and runtime logs
+tools/
+logs/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+.vercel

@@ -1,0 +1,447 @@
+{
+  "generated_at": "2026-10-24T09:34:56.792750+00:00",
+  "source": {
+    "dataset": "PaySim (synthetic mobile-money ledger)",
+    "rows_scanned": 6362620,
+    "rows_modelled": 2770409,
+    "model": "HistGradientBoostingClassifier",
+    "pr_auc": 1.0,
+    "roc_auc": 1.0,
+    "threshold": 0.98
+  },
+  "rings": [
+    {
+      "ring_id": "PS-001",
+      "accounts": [
+        "C2026325575",
+        "C1394526584",
+        "C1833239242",
+        "C1632677830",
+        "C1292548899",
+        "C141293835"
+      ],
+      "edges": [
+        {
+          "source": "C2026325575",
+          "target": "C1394526584",
+          "amount": 169941.73,
+          "timestamp": "2025-10-01T04:00:00Z"
+        },
+        {
+          "source": "C1833239242",
+          "target": "C1394526584",
+          "amount": 105095.1,
+          "timestamp": "2025-10-01T05:00:00Z"
+        },
+        {
+          "source": "C1632677830",
+          "target": "C1394526584",
+          "amount": 122377.68,
+          "timestamp": "2025-10-01T06:00:00Z"
+        },
+        {
+          "source": "C1292548899",
+          "target": "C1394526584",
+          "amount": 155270.31,
+          "timestamp": "2025-10-01T06:00:00Z"
+        },
+        {
+          "source": "C141293835",
+          "target": "C1394526584",
+          "amount": 117182.34,
+          "timestamp": "2025-10-01T06:00:00Z"
+        }
+      ],
+      "total_amount": 669867.16,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 6,
+      "anomaly_score": 0.2,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-002",
+      "accounts": [
+        "C1769581889",
+        "C217441120",
+        "C2116554832",
+        "C572784725",
+        "C158490135",
+        "C1081266062",
+        "C1385372066"
+      ],
+      "edges": [
+        {
+          "source": "C1769581889",
+          "target": "C217441120",
+          "amount": 556218.01,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C2116554832",
+          "target": "C217441120",
+          "amount": 63395.26,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C572784725",
+          "target": "C217441120",
+          "amount": 912069.82,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C158490135",
+          "target": "C217441120",
+          "amount": 187709.02,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C1081266062",
+          "target": "C217441120",
+          "amount": 711629.98,
+          "timestamp": "2025-10-01T11:00:00Z"
+        },
+        {
+          "source": "C1385372066",
+          "target": "C217441120",
+          "amount": 434398.42,
+          "timestamp": "2025-10-01T11:00:00Z"
+        }
+      ],
+      "total_amount": 2865420.51,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 7,
+      "anomaly_score": 0.167,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-003",
+      "accounts": [
+        "C858959216",
+        "C864078397",
+        "C701080214",
+        "C672871230",
+        "C1349347496",
+        "C1547015781"
+      ],
+      "edges": [
+        {
+          "source": "C858959216",
+          "target": "C864078397",
+          "amount": 1996.17,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C701080214",
+          "target": "C864078397",
+          "amount": 641121.64,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C672871230",
+          "target": "C864078397",
+          "amount": 232682.62,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C1349347496",
+          "target": "C864078397",
+          "amount": 324254.58,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C1547015781",
+          "target": "C864078397",
+          "amount": 515046.94,
+          "timestamp": "2025-10-01T10:00:00Z"
+        }
+      ],
+      "total_amount": 1715101.95,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 6,
+      "anomaly_score": 0.2,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-004",
+      "accounts": [
+        "C270137560",
+        "C1769042905",
+        "C672568911",
+        "C1989178633",
+        "C540465663",
+        "C684758020",
+        "C462640764",
+        "C1566597169",
+        "C1571492178",
+        "C1694299929",
+        "C1135604231"
+      ],
+      "edges": [
+        {
+          "source": "C270137560",
+          "target": "C1769042905",
+          "amount": 139858.39,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C672568911",
+          "target": "C1769042905",
+          "amount": 138362.05,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C1989178633",
+          "target": "C1769042905",
+          "amount": 159200.06,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C540465663",
+          "target": "C1769042905",
+          "amount": 58813.41,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C684758020",
+          "target": "C1769042905",
+          "amount": 361559.69,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C462640764",
+          "target": "C1769042905",
+          "amount": 78094.45,
+          "timestamp": "2025-10-01T09:00:00Z"
+        },
+        {
+          "source": "C1566597169",
+          "target": "C1769042905",
+          "amount": 189441.24,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C1571492178",
+          "target": "C1769042905",
+          "amount": 20978.03,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C1694299929",
+          "target": "C1769042905",
+          "amount": 269502.41,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C1135604231",
+          "target": "C1769042905",
+          "amount": 129407.39,
+          "timestamp": "2025-10-01T10:00:00Z"
+        }
+      ],
+      "total_amount": 1545217.12,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 11,
+      "anomaly_score": 0.1,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-005",
+      "accounts": [
+        "C1426344756",
+        "C380242442",
+        "C719518227",
+        "C383717053",
+        "C117548955",
+        "C1254728191"
+      ],
+      "edges": [
+        {
+          "source": "C1426344756",
+          "target": "C380242442",
+          "amount": 132427.3,
+          "timestamp": "2025-10-01T05:00:00Z"
+        },
+        {
+          "source": "C719518227",
+          "target": "C380242442",
+          "amount": 89569.75,
+          "timestamp": "2025-10-01T05:00:00Z"
+        },
+        {
+          "source": "C383717053",
+          "target": "C380242442",
+          "amount": 262434.54,
+          "timestamp": "2025-10-01T07:00:00Z"
+        },
+        {
+          "source": "C117548955",
+          "target": "C380242442",
+          "amount": 156273.53,
+          "timestamp": "2025-10-01T07:00:00Z"
+        },
+        {
+          "source": "C1254728191",
+          "target": "C380242442",
+          "amount": 24002.6,
+          "timestamp": "2025-10-01T07:00:00Z"
+        }
+      ],
+      "total_amount": 664707.72,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 5,
+      "anomaly_score": 0.2,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-006",
+      "accounts": [
+        "C1683174795",
+        "C427998326",
+        "C2044550116",
+        "C81058380",
+        "C271750797"
+      ],
+      "edges": [
+        {
+          "source": "C1683174795",
+          "target": "C427998326",
+          "amount": 43092.0,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C2044550116",
+          "target": "C427998326",
+          "amount": 21663.09,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C81058380",
+          "target": "C427998326",
+          "amount": 139462.66,
+          "timestamp": "2025-10-01T10:00:00Z"
+        },
+        {
+          "source": "C271750797",
+          "target": "C427998326",
+          "amount": 98471.83,
+          "timestamp": "2025-10-01T10:00:00Z"
+        }
+      ],
+      "total_amount": 302689.58,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 5,
+      "anomaly_score": 0.25,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-007",
+      "accounts": [
+        "C1422611591",
+        "C975019107",
+        "C232612462",
+        "C1778477477",
+        "C1907828864"
+      ],
+      "edges": [
+        {
+          "source": "C1422611591",
+          "target": "C975019107",
+          "amount": 234723.4,
+          "timestamp": "2025-10-06T18:00:00Z"
+        },
+        {
+          "source": "C232612462",
+          "target": "C975019107",
+          "amount": 113580.47,
+          "timestamp": "2025-10-06T19:00:00Z"
+        },
+        {
+          "source": "C1778477477",
+          "target": "C975019107",
+          "amount": 180516.28,
+          "timestamp": "2025-10-06T19:00:00Z"
+        },
+        {
+          "source": "C1907828864",
+          "target": "C975019107",
+          "amount": 12838.14,
+          "timestamp": "2025-10-06T20:00:00Z"
+        }
+      ],
+      "total_amount": 541658.29,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 5,
+      "anomaly_score": 0.25,
+      "pattern": "fan-in to collection account"
+    },
+    {
+      "ring_id": "PS-008",
+      "accounts": [
+        "C1547714604",
+        "C7881234",
+        "C1615923089",
+        "C1687111891",
+        "C2046784543",
+        "C1182937085",
+        "C1303415116",
+        "C483516546",
+        "C29472247"
+      ],
+      "edges": [
+        {
+          "source": "C1547714604",
+          "target": "C7881234",
+          "amount": 216422.0,
+          "timestamp": "2025-10-01T06:00:00Z"
+        },
+        {
+          "source": "C1615923089",
+          "target": "C7881234",
+          "amount": 109261.69,
+          "timestamp": "2025-10-01T07:00:00Z"
+        },
+        {
+          "source": "C1687111891",
+          "target": "C7881234",
+          "amount": 259134.71,
+          "timestamp": "2025-10-01T07:00:00Z"
+        },
+        {
+          "source": "C2046784543",
+          "target": "C7881234",
+          "amount": 1068819.73,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C1182937085",
+          "target": "C7881234",
+          "amount": 382402.52,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C1303415116",
+          "target": "C7881234",
+          "amount": 215133.01,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C483516546",
+          "target": "C7881234",
+          "amount": 186966.07,
+          "timestamp": "2025-10-01T08:00:00Z"
+        },
+        {
+          "source": "C29472247",
+          "target": "C7881234",
+          "amount": 354469.53,
+          "timestamp": "2025-10-01T08:00:00Z"
+        }
+      ],
+      "total_amount": 2792609.26,
+      "time_window_seconds": 7200.0,
+      "new_accounts": 9,
+      "anomaly_score": 0.125,
+      "pattern": "fan-in to collection account"
+    }
+  ]
+}

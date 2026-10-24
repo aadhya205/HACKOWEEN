@@ -1,0 +1,27 @@
+{
+  "created_by": "training/build_ft_dataset.py",
+  "seed": 11,
+  "per_ring": 60,
+  "base_rings": [
+    "PS-001",
+    "PS-002",
+    "PS-003",
+    "PS-004",
+    "PS-005",
+    "PS-006",
+    "PS-007",
+    "PS-008",
+    "R1",
+    "R2"
+  ],
+  "validation_rings": [
+    "PS-004",
+    "PS-008"
+  ],
+  "train_examples": 480,
+  "validation_examples": 120,
+  "guardrail_pass_rate": 1.0,
+  "format": "OpenAI-style chat messages (system/user/assistant), JSONL",
+  "target_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "note": "Answers are the number-guardrailed template, so a fine-tuned model learns the house style without ever inventing a figure."
+}
